@@ -1,0 +1,22 @@
+.service_heading {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    align-items: center;
+}
+
+.clients_line {
+    width: 100%;
+    padding: 10px;
+
+}
+.clients_line1 {
+    width: 58%;
+    padding: 10px;
+
+}
+.clents_line_2 {
+  width: 45%;
+  padding: 10px;
+
+}

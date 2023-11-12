@@ -1,226 +1,262 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Company Website </title>
-    <!-- font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./images/logoNO.png" type="image/x-icon">
 
 
-    <!-- ----------- css -------------- -->
+  <title>Company Website </title>
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/service.css">
 
-    <!-- welcome page  -->
-    <link rel="stylesheet" href="welcome/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- ----------- css -------------- -->
 
-    <script>
-        $(document).ready(function () {
-            $.get("welcome/index.html", function (data) {
-                $("#dynamic-content").html(data);
-                setTimeout(function () {
-                    $("#dynamic-content").empty();
-                }, 6000);
-            });
-        });
-    </script>
-    <style>
-        #dynamic-content {
-            z-index: 10;
-        }
-    </style>
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/service.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/clients.css">
+
+  <!-- ------------- aos animations -------------  -->
+  <link rel="stylesheet" href="./aos/aos.css">
+
 </head>
 
 <body>
-    <div id="dynamic-content"></div>
-    <nav>
-        <div class="logo">
-            <img src="./images/codeWizy.png" alt="Logo Image">
-        </div>
-        <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-
-        </ul>
-    </nav>
-
-
-    <div class="home">
-        <div class="home_logo"> <img src="./images/logoNoBg.png" alt=""></div>
-
-        <div class="home_content">
-            <h1>CODE WIZY</h1>
-            <h4>Weaving Digital Magic.</h4>
-
-
-
-            <div class="typewriter">
-                <h3>We offer</h3>
-                <h2 id="typewriter-text"></h2>
-            </div>
-        </div>
-        <img src="./images/laptop.png" alt="">
+  <nav>
+    <div class="logo">
+      <img src="./images/codeWizy.png" alt="Logo Image">
     </div>
-
-
-    <!--==================== SERVICEs start ====================-->  
-      <div class="service_heading">
-        <div class="service_line">
-            <hr>
-        </div>
-        <h1 class="service_line_1">Turning Ideas into Digital Success</h1>
-        <div class="service_line">
-            <hr>
-        </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
-    <section class="container">
-        <section class="card__container">
-            <div class="card__bx card__1">
-                <div class="card__data">
-                    <div class="card__icon">
-                        <div class="card__icon-bx">
-                            <i class="fa-solid fa-pen-ruler"></i>
-                        </div>
-                    </div>
-                    <div class="card__content">
-                        <h3>Design</h3>
-                        <p>Crafting intuitive and captivating digital blueprints that breathe life into ideas.</p> <a
-                            href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card__bx card__2">
-                <div class="card__data">
-                    <div class="card__icon">
-                        <div class="card__icon-bx"><i class="fa-solid fa-code"></i></div>
-                    </div>
-                    <div class="card__content">
-                        <h3>Development</h3>
-                        <p>Transforming concepts into robust, scalable, and innovative software solutions.</p> <a
-                            href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card__bx card__3">
-                <div class="card__data">
-                    <div class="card__icon">
-                        <div class="card__icon-bx"><i class="fa-solid fa-rocket"></i></div>
-                    </div>
-                    <div class="card__content">
-                        <h3>Lauch</h3>
-                        <p> Igniting success by propelling meticulously crafted products into the digital realm with
-                            finesse.</p> <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li>
 
-        </section>
-        <div class="service_details">
+    </ul>
+  </nav>
 
-                <div class="servce_p">
-                <img src="./images/codeWizyCaption.png" alt="">
-                <p>At CODE WIZY, we are your dedicated architects of digital transformation. Our journey together begins with the Design phase, where we craft imaginative blueprints that seamlessly fuse creativity and innovation. Moving into the Develop phase, our skilled engineers meticulously construct robust software solutions that bring your vision to life, ensuring flawless functionality. Finally, in the Launch phase, we propel your digital venture to new heights, delivering a seamless takeoff and setting the stage for your success. Join us as we navigate the Design, Develop, and Launch continuum, turning your ideas into exceptional digital realities</p>
 
-            </div>
+  <div class="home">
+    <div data-aos-delay="50" data-aos-duration="1000" data-aos="fade-down" class="home_logo"> <img src="./images/logoNoBg.png" alt=""></div>
 
-        </div>
-    </section>
-    <div class="service_heading">
-        <div class="service_line">
-            <hr>
-        </div>
-        <h1 class="service_line_2">Services we provide</h1>
-        <div class="service_line">
-            <hr>
-        </div>
+    <div class="home_content">
+      <h1 data-aos-delay="100" data-aos-duration="1000" data-aos="fade-right">CODE WIZY</h1>
+      <h4 data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right">Weaving Digital Magic.</h4>
+
+
+
+      <div class="typewriter">
+        <h3>We offer</h3>
+        <h2 id="typewriter-text"></h2>
+      </div>
     </div>
-    <div class="containerr">
-        <div class="cardd">
-          <img src="./images/webDevelopment.jpg" alt="" />
-          <div class="cardd-body">
-            <div class="row">
-              <div class="cardd-title">
-                <h4>Web Development<br>ㅤ</h4>
-                <h3>ㅤ</h3>
-              </div>
-              <div class="view-btn">
-                <a href="">View Details</a>
-              </div>
-            </div>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-              dignissimos.
-            </p>
-            <div class="btn-group">
-      <button class="button-29" role="button">Buynow</button>
+    <img data-aos-delay="100" data-aos-duration="1000" data-aos="flip-left" src="./images/laptop.png" alt="">
+  </div>
+
+
+  <!--==================== SERVICEs start ====================-->
+  <div class="service_heading">
+    <div class="service_line">
+      <hr>
+    </div>
+    <h1 class="service_line_1">Turning Ideas into Digital Success</h1>
+    <div class="service_line">
+      <hr>
+    </div>
+  </div>
+  <section class="container">
+    <section class="card__container">
+      <div data-aos-delay="100" data-aos-duration="1000" data-aos="fade-right" data-aos-duration="2000" class="card__bx card__1">
+        <div class="card__data">
+          <div class="card__icon">
+            <div class="card__icon-bx">
+              <i class="fa-solid fa-pen-ruler"></i>
             </div>
           </div>
-        </div>
-      
-        <div class="cardd">
-          <img class="appImg" src="./images/appDevelopment.jpg" alt="" />
-          <div class="cardd-body">
-            <div class="row">
-              <div class="cardd-title">
-                <h4>App Development<br>ㅤ</h4>
-                <h3>ㅤ</h3>
-              </div>
-              <div class="view-btn">
-                <a href="">View Details</a>
-              </div>
-            </div>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-              dignissimos.
-            </p>
-            <div class="btn-group">
-      <button class="button-29" role="button">Buynow</button>
-            </div>
+          <div class="card__content">
+            <h3>Design</h3>
+            <p>Crafting intuitive and captivating digital blueprints that breathe life into ideas.</p> <a href="#">Read
+              More</a>
           </div>
         </div>
-
-        <div class="cardd">
-            <img src="./images/graphicDesign.jpg" alt="" />
-            <div class="cardd-body">
-              <div class="row">
-                <div class="cardd-title">
-                  <h4>Graphic Design<br>ㅤ</h4>
-                  <h3>ㅤ</h3>
-                </div>
-                <div class="view-btn">
-                  <a href="">View Details</a>
-                </div>
-              </div>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-                dignissimos.
-              </p>
-              <div class="btn-group">
-        <button class="button-29" role="button">Buynow</button>
-              </div>
-            </div>
+      </div>
+      <div data-aos-delay="100" data-aos-duration="1000" data-aos="fade-down" class="card__bx card__2">
+        <div class="card__data">
+          <div class="card__icon">
+            <div class="card__icon-bx"><i class="fa-solid fa-code"></i></div>
           </div>
+          <div class="card__content">
+            <h3>Development</h3>
+            <p>Transforming concepts into robust, scalable, and innovative software solutions.</p> <a href="#">Read
+              More</a>
+          </div>
+        </div>
+      </div>
+      <div data-aos-delay="100" data-aos-duration="1000" data-aos="fade-left" class="card__bx card__3">
+        <div class="card__data">
+          <div class="card__icon">
+            <div class="card__icon-bx"><i class="fa-solid fa-rocket"></i></div>
+          </div>
+          <div class="card__content">
+            <h3>Lauch</h3>
+            <p> Igniting success by propelling meticulously crafted products into the digital realm with
+              finesse.</p> <a href="#">Read More</a>
+          </div>
+        </div>
       </div>
 
-    <script src="./main.js"></script>
+    </section>
+    <div class="service_details">
+
+      <div class="servce_p">
+        <img data-aos-delay="100" data-aos-duration="1000" data-aos="fade-right" src="./images/codeWizyCaption.png" alt="">
+        <p data-aos-delay="100" data-aos-duration="1000" data-aos="fade-left">At CODE WIZY, we are your dedicated architects of digital transformation. Our journey together begins with
+          the Design phase, where we craft imaginative blueprints that seamlessly fuse creativity and innovation. Moving
+          into the Develop phase, our skilled engineers meticulously construct robust software solutions that bring your
+          vision to life, ensuring flawless functionality. Finally, in the Launch phase, we propel your digital venture
+          to new heights, delivering a seamless takeoff and setting the stage for your success. Join us as we navigate
+          the Design, Develop, and Launch continuum, turning your ideas into exceptional digital realities</p>
+
+      </div>
+
+    </div>
+  </section>
+  <div class="service_heading">
+    <div class="service_line">
+      <hr>
+    </div>
+    <h1 class="service_line_2">Services we provide</h1>
+    <div class="service_line">
+      <hr>
+    </div>
+  </div>
+  <div class="containerr">
+    <div data-aos-delay="100" data-aos-duration="1000" data-aos="fade-right" class="cardd">
+      <img src="./images/webDevelopment.jpg" alt="" />
+      <div class="cardd-body">
+        <div class="row">
+          <div class="cardd-title">
+            <h2>Web Development<br>ㅤ</h2>
+          </div>
+          <div class="view-btn">
+            <a href="">View Details</a>
+          </div>
+        </div>
+        <p>Create stunning, fast-loading websites optimized for all devices to convert visitors into customers.</p>
+
+
+
+      </div>
+    </div>
+
+    <div data-aos-delay="100" data-aos-duration="500" data-aos="fade-right" class="cardd">
+      <img class="appImg" src="./images/appDevelopment.jpg" alt="" />
+      <div class="cardd-body">
+        <div class="row">
+          <div class="cardd-title">
+            <h2>App Development<br>ㅤ</h2>
+          </div>
+          <div class="view-btn">
+            <a href="">View Details</a>
+          </div>
+        </div>
+        <p>Develop user-centric mobile apps that seamlessly align with your brand experience.</p>
+
+
+      </div>
+    </div>
+
+    <div data-aos-delay="100" data-aos-duration="500" data-aos="fade-left" class="cardd">
+      <img src="./images/graphicDesign.jpg" alt="" />
+      <div class="cardd-body">
+        <div class="row">
+          <div class="cardd-title">
+            <h2>Graphic Design<br>ㅤ</h2>
+          </div>
+          <div class="view-btn">
+            <a href="">View Details</a>
+          </div>
+        </div>
+        <p>Create visually stunning designs that leave an impact and inspire action.</p>
+      </div>
+    </div>
+
+    <div data-aos-delay="100" data-aos-duration="1000" data-aos="fade-left" class="cardd">
+      <img src="./images/graphicDesign.jpg" alt="" />
+      <div class="cardd-body">
+        <div class="row">
+          <div class="cardd-title">
+            <h2>Local SEO<br>ㅤ</h2>
+          </div>
+          <div class="view-btn">
+            <a href="">View Details</a>
+          </div>
+        </div>
+        <p>Our localized SEO strategies help customers discover your business as the top result for searches in your geographic area.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ------- clients -------  -->
+  <section>
+    <div class="service_heading">
+      <div class="clients_line">
+        <hr>
+      </div>
+      <h1 class="clents_line_2">Clients We've Collabbed With</h1>
+      <div class="clients_line">
+        <hr>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer   -->
+
+  <style>
+
+  </style>
+  <footer>
+    <div class="company-logo">
+      <img src="./images/codeWizy.png" alt="Your Company Logo">
+      <p>"From imaginative design to robust development and seamless launch, we turn ideas into exceptional digital realities."</p>
+
+    </div>
+    <div class="footerNav">
+
+      <p>Contact Us:</p>
+      <p>Email: info@codewizy.com</p>
+      <p>Phone: +91 6361557581</p>
+      <p>Phone: +91 9972826383</p>
+
+    </div>
+
+<div class="footerCred">
+  <br>
+  <br>
+  <p>&copy; 2023 Code Wizy Services. All rights reserved.</p>
+
+</div>
+  </footer>
+  
+
+
+
+  <script src="./main.js"></script>
+  <script src="./aos/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
