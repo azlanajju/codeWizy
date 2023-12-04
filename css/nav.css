@@ -15,10 +15,9 @@
     font-family: 'Teko', sans-serif;
     letter-spacing: 1px;
     font-weight: 300;
-    transition: 1s;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden ;
 }
 nav{
     height: 60px;
@@ -93,6 +92,7 @@ nav{
     nav{
         position: fixed;
         z-index: 3;
+
     }
     .hamburger{
         display:block;
@@ -102,7 +102,7 @@ nav{
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
-        transition: all 0.7s ease;
+        transition: all 0.1s ease;
     }
     .nav-links{
         position: fixed;
@@ -112,13 +112,21 @@ nav{
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
         -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
+        transition: all 0.5s ease-out;
         pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     .nav-links li{
         opacity: 0;
@@ -149,13 +157,17 @@ nav{
     li.fade{
         opacity: 1;
     }
+    .nav-links li a{
+        font-size: 25px;
+    }
+
 }
 /*Animating Hamburger Icon on Click*/
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
 .toggle .line2{
-    transition: all 0.7s ease;
+    transition: all 0.1s ease;
     width:0;
 }
 .toggle .line3{

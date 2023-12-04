@@ -39,3 +39,18 @@ footer {
     margin: 0;
     padding: 0;
   }
+  @media (max-width:780px) {
+    .company-logo img{
+      height: 100px;
+      margin-left: -20px;
+    }
+    .company-logo {
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .company-logo p{
+      display: none;
+    }
+  }

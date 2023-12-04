@@ -1,174 +1,181 @@
 .service_heading {
-    display: flex;
-    justify-content: space-around;
-    background: black;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  align-items: center;
 }
 
 .service_line {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
+  
 
 }
+
 .service_line_1 {
-    width: 68%;
-    padding: 10px;
+  width: 68%;
+  padding: 10px;
+  
 
 }
+
 .service_line_2 {
   width: 35%;
   padding: 10px;
 
 }
-.service_details{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.service_details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.servce_p{
-    display: flex;
-    justify-content: center;
+
+.servce_p {
+  display: flex;
+  justify-content: center;
 }
-.servce_p p{
-font-size: 22px;
-text-align: justify;
+
+.servce_p p {
+  font-size: 22px;
+  text-align: justify;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .container {
-    width: 100%;
-    display: grid;
-    place-items: center;
+  width: 100%;
+  display: grid;
+  place-items: center;
 
-    background: #000;
+  background: #000;
 
 }
 
 /*==================== SERVICE CARD ====================*/
 .card__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    width: 100%;
-    max-width: 90%;
-    margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 90%;
+  margin: 40px auto;
 
 }
 
 .card__bx {
-    --bg-clr: #000;
-    --txt-clr: #ffffff;
-    --btn-txt-clr: #000;
-    --transition: all 0.5s;
+  --bg-clr: #000;
+  --txt-clr: #ffffff;
+  --btn-txt-clr: #000;
+  --transition: all 0.5s;
 
-    height: 270px;
-    width: 380px;
-    overflow: hidden;
-    border-radius: 20px;
-    border-top-left-radius: 70px;
-    position: relative;
-    overflow: hidden;
-    background: var(--clr);
-    transition: var(--transition);
+  height: 270px;
+  width: 380px;
+  overflow: hidden;
+  border-radius: 20px;
+  border-top-left-radius: 70px;
+  position: relative;
+  overflow: hidden;
+  background: var(--clr);
+  transition: var(--transition);
 }
 
 .card__1 {
-    --clr: #9200f3;
+  --clr: #9200f3;
 }
 
 .card__2 {
-    --clr: #9200f3;
+  --clr: #9200f3;
 }
 
 .card__3 {
-    --clr: #9200f3;
+  --clr: #9200f3;
 }
 
 .card__bx .card__data {
-    position: absolute;
-    inset: 10px;
-    border-radius: 10px;
-    background: black;
+  position: absolute;
+  inset: 10px;
+  border-radius: 10px;
+  background: black;
 }
 
 .card__bx .card__data .card__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom-right-radius: 50%;
-    height: 100px;
-    width: 100px;
-    background: var(--clr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background: var(--clr);
 }
 
 .card__bx .card__data .card__icon::before {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    height: 30px;
-    width: 30px;
-    border-top-left-radius: 30px;
-    background: transparent;
-    box-shadow: -5px -5px 0 5px var(--clr);
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-top-left-radius: 30px;
+  background: transparent;
+  box-shadow: -5px -5px 0 5px var(--clr);
 }
 
 .card__bx .card__data .card__icon::after {
-    content: '';
-    position: absolute;
-    right: -30px;
-    top: 0;
-    height: 30px;
-    width: 30px;
-    border-top-left-radius: 30px;
-    background: transparent;
-    box-shadow: -5px -5px 0 5px var(--clr);
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-top-left-radius: 30px;
+  background: transparent;
+  box-shadow: -5px -5px 0 5px var(--clr);
 }
 
 .card__bx .card__data .card__icon .card__icon-bx {
-    position: absolute;
-    inset: 10px;
-    border-radius: 10px;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    background: var(--bg-clr);
-    color: var(--clr);
+  position: absolute;
+  inset: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background: var(--bg-clr);
+  color: var(--clr);
 }
 
 .card__bx:hover .card__data .card__icon .card__icon-bx {
-    background: var(--clr);
-    color: var(--txt-clr);
-    transition: var(--transition);
+  background: var(--clr);
+  color: var(--txt-clr);
+  transition: var(--transition);
 }
 
 .card__bx .card__data .card__content {
-    position: absolute;
-    top: 50px;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    color: var(--txt-clr);
+  position: absolute;
+  top: 50px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--txt-clr);
 }
 
 .card__bx .card__data .card__content h3 {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .card__bx .card__data .card__content p {
-    font-size: 18px;
-    opacity: 0.75;
+  font-size: 18px;
+  opacity: 0.75;
 }
 
 
@@ -187,22 +194,24 @@ text-align: justify;
   width: 300px;
   height: 320px;
   border-radius: 5px;
-  margin:10px 20px;
-  background:#000;
+  margin: 10px 20px;
+  background: #000;
   box-shadow: rgba(159, 18, 214, 0.48) 6px 2px 16px 0px, rgba(48, 9, 189, 0.8) -6px -2px 16px 0px;
 }
-.cardd > *:not(img) {
+
+.cardd>*:not(img) {
   padding: 5px 10px;
 }
 
-.appImg{
-  filter: hue-rotate(280deg); 
+.appImg {
+  filter: hue-rotate(280deg);
 }
+
 .cardd img {
   width: 90%;
   height: 180px;
   position: relative;
-  margin:-50px 5% 0 5%;
+  margin: -50px 5% 0 5%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -210,6 +219,7 @@ text-align: justify;
 .cardd-body {
   padding: 5px;
 }
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -246,20 +256,23 @@ text-align: justify;
   text-decoration: none;
   color: #007bff;
 }
-.view-btn a:hover{
-    color: #fff;
-    background-color: #007bff;
+
+.view-btn a:hover {
+  color: #fff;
+  background-color: #007bff;
 }
+
 .btn-group {
   display: flex;
 }
+
 .button-29 {
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #c60fd6 0, #001df8 100%);
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -274,12 +287,12 @@ text-align: justify;
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow .15s, transform .15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 18px;
   width: 100%;
 }
@@ -299,14 +312,77 @@ text-align: justify;
 }
 
 .credit a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 800;
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+}
+
+.credit {
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+@media (max-width:780px) {
+  .service_line_1 {
+    font-size: 15px;
+    width: 260%;
   }
-  
-  .credit {
-      color: #000;
-    text-align: center;
-    margin-top: 10px;
-    font-family: Verdana,Geneva,Tahoma,sans-serif;
+
+  .card__bx {
+    width: 90vw;
+    margin: 0;
+
+
   }
+
+  .card__container {
+    max-width: 100vw;
+    position: relative;
+  }
+
+  .service_details {
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .servce_p {
+    flex-direction: column;
+  }
+
+  .servce_pImg {
+    width: 300px !important;
+  }
+
+  .servce_p p {
+    font-size: 15px;
+  }
+
+  .service_line_2 {
+    font-size: 24px;
+    width: 200%;
+  }
+
+  .containerr {
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .cardd {
+    min-width: 80vw;
+  }
+
+  .cardd1 {
+    margin-left: 265vw;
+    margin-bottom: 0;
+  }
+
+}
